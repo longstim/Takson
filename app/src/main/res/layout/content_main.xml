@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.kardavel.takson.cloudvision.MainActivity"
+                tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Silahkan upload gambar hewan."/>
+
+            <ImageView
+                android:id="@+id/main_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/image_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_title_kingdom"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kingdom" />
+
+                <TextView
+                    android:id="@+id/txt_titikdua_kingdom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text=": " />
+
+                <TextView
+                    android:id="@+id/txt_content_kingdom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:layout_alignLeft="@+id/txt_title_nama_hewan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_title_filum"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Filum" />
+
+                <TextView
+                    android:id="@+id/txt_titikdua_filum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text=": " />
+
+                <TextView
+                    android:id="@+id/txt_content_filum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:layout_alignLeft="@+id/txt_title_kingdom" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txt_title_kelas"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas" />
+
+                <TextView
+                    android:id="@+id/txt_titikdua_kelas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text=": " />
+
+                <TextView
+                    android:id="@+id/txt_content_kelas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:layout_alignLeft="@+id/txt_title_filum"
+                    android:layout_below="@+id/txt_title_filum" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txt_title_ordo"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ordo" />
+
+                <TextView
+                    android:id="@+id/txt_titikdua_ordo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text=": " />
+
+                <TextView
+                    android:id="@+id/txt_content_ordo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:layout_alignLeft="@+id/txt_title_kelas"
+                    android:layout_below="@+id/txt_title_kelas" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txt_title_famili"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Famili" />
+
+                <TextView
+                    android:id="@+id/txt_titikdua_famili"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text=": " />
+
+                <TextView
+                    android:id="@+id/txt_content_famili"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:layout_alignLeft="@+id/txt_title_ordo"
+                    android:layout_below="@+id/txt_title_ordo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txt_title_genus"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Genus" />
+
+                <TextView
+                    android:id="@+id/txt_titikdua_genus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text=": " />
+
+                <TextView
+                    android:id="@+id/txt_content_genus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:layout_alignLeft="@+id/txt_title_famili"
+                    android:layout_below="@+id/txt_title_famili" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txt_title_spesies"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Spesies" />
+
+                <TextView
+                    android:id="@+id/txt_titikdua_spesies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text=": " />
+
+                <TextView
+                    android:id="@+id/txt_content_spesies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:layout_alignLeft="@+id/txt_title_genus"
+                    android:layout_below="@+id/txt_title_genus" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_title_ciri_hewan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:text="Ciri-ciri" />
+
+            <TextView
+                android:id="@+id/txt_content_ciri_hewan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_alignLeft="@+id/txt_title_ciri_hewan"
+                android:layout_below="@+id/txt_title_ciri_hewan" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
